@@ -1,0 +1,23 @@
+  <header>
+    <h2>{{ feed.title }}</h2>
+    
+     <p ng-show="feed.description">
+        <h5>Description / Summary</h5>
+        {{ feed.description }}
+     </p>
+    
+  </header>
+
+<ul ng-controller="FeedEntriesFormCtrl">
+  <li ng-repeat="entry in feed.entries track by $index"
+       class="post-info">
+        <div>
+            <small>{{entry.publishedDate}}</small>
+        </div>
+        <h3 class="feed-name"><a ng-href="/feeds/{{feed.id}}/item/{{$index}}">{{entry.title}}</a>
+        </h3>
+      <p class="feed-desc">
+          {{entry.contentSnippet}}
+      </p>
+    </li>
+  </ul>

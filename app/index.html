@@ -1,0 +1,31 @@
+<!DOCTYPE html> 
+<html ng-app="myRss" ng-controller="MainCtrl">
+<head>
+	<title>-</title>
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+	<link href='http://fonts.googleapis.com/css?family=Enriqueta:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/styles/main.css">
+	
+</head>
+<body>
+
+  <div class="wrapper">
+     <div class="db1 t1" ng-include="partial('/_nav.html')"></div>
+     <div class="db2-db4 t2-t4 ng-view"></div>
+  </div>
+  
+<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.3.0/lodash.js"></script>
+<script type="text/javascript" src="/bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="/bower_components/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+<script type="text/javascript" src="/bower_components/angular-animate/angular-animate.js"></script>
+<script type="text/javascript" src="/scripts/app.js"></script>
+<script type="text/javascript" src="/scripts/config.js"></script>
+<script type="text/javascript" src="/scripts/directives.js"></script>
+<script type="text/javascript" src="/scripts/services.js"></script>
+<script type="text/javascript" src="/scripts/modules/HomePages.js"></script>
+<script type="text/javascript" src="/scripts/modules/Storage.js"></script>
+<script type="text/javascript" src="/scripts/modules/feedPages.js"></script>
+
+</body>
+</html>

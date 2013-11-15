@@ -1,0 +1,32 @@
+
+  <div class="da1-da2">  
+        <form class="" ng-submit="searchFeed()">
+            <fieldset>
+                <legend>Lookup a feed URL</legend>
+                <div>
+                    <label for="lookup-url">URL</label>
+                    <input id="url" name="urlT" type="url" placeholder="http://www.dailyjs.com" required
+                               ng-model="urlT">
+                </div>
+                <div>
+                    <button type="submit">Lookup</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="da3-da4">
+        <form ng-submit="addFeed()" >
+            <fieldset>
+                <legend>Add a feed</legend>
+                <div>
+                    <label for="add-url">Feed URL</label>
+                    <input id="add-url" name="url" type="url" required
+                               ng-model="feed.url" >
+                </div>
+                <div>
+                    <button type="submit">Add</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>

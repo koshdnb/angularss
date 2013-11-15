@@ -1,0 +1,616 @@
+/*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+*{
+  -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9.
+ * Hide the `template` element in IE, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+    display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+    font-family: 16px/24px normal Georgia,sans-serif; /* 1 */
+    -ms-text-size-adjust: 100%; /* 2 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+    background: transparent;
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+
+a:focus {
+    outline: thin dotted;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+
+b,
+strong {
+    font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+
+dfn {
+    font-style: italic;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+
+pre {
+    white-space: pre-wrap;
+}
+
+/**
+ * Set consistent quote types.
+ */
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+    font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+
+img {
+    border: 0;
+}
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+
+figure {
+    margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+    border: 0; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* 1 */
+    font-size: 100%; /* 2 */
+    margin: 0; /* 3 */
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+button,
+input {
+    line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+
+button,
+select {
+    text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button; /* 2 */
+    cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+
+    body {
+      margin-top: 50px;
+    }
+    .wrapper{
+    overflow: auto;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+    
+    h1 {
+      color: #262626;
+      font-family: "Enriqueta", serif;
+      font-size: 44px;
+      line-height: 48px;
+      margin: 0 0 30px;
+    }
+    
+    h2 {
+      color: #262626;
+      font-family: "Enriqueta", serif;
+      font-size: 32px;
+      font-weight: normal;
+      line-height: 42px;
+      margin: 0 0 24px;
+      padding: 12px 0 0;
+    }
+    
+    h3 {
+      color: #c73036;
+      font-family: "Enriqueta", serif;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 24px;
+      margin: 0 0 24px;
+      padding: 12px 0 0;
+      text-transform: uppercase;
+    }
+    
+    body, p {
+      color: #2f2f2f;
+      font-family: Georgia, serif;
+      font-size: 17px;
+      line-height: 24px;
+      margin: 0 0 24px;
+    }
+    
+    .post-info {
+      color: #aaaaaa;
+      font-family: Georgia, serif;
+      font-size: 12px;
+      font-style: italic;
+      line-height: 12px;
+      padding: 24px 0;
+    }
+    
+    .post-info a {
+      color: #c73036;
+      font-family: "Enriqueta", serif;
+      font-style: normal;
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    
+
+
+
+
+@media only screen and (max-width:767px) {
+
+/* Mobile grid: 2 column / gutter: 3.125% ---------------------------------------- */
+
+[class*=" m1"],[class^=m1],[class*=" m2"],[class^=m2],.m-all{display:block;float:left;margin-right:-100%;}
+
+/* Mobile grid spans ----- */
+
+.m1,.m2{width:48.4375%;}.m-all{width:100%;margin-left:0;margin-right:0;clear:left;}
+
+/* Mobile grid padding ----- */
+
+[class*=" m-pad"],[class^=m-pad]{padding-left:1.5625%;padding-right:1.5625%;left:-1.5625%;}[class~=m-padfull],[class~=m-padinfull],[class~=m-padfull],[class~=m-padinfull]{padding-left:3.125%;padding-right:3.125%;left:-3.125%;}.m-pad,.m-padfull{position:relative;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}.m-padin[class~=m-padin],.m-padinfull[class~=m-padinfull]{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;left:0;}
+
+/* Mobile grid relationships ----- */
+
+[class*=" m2"],[class^=m2]{margin-left:51.5625%;}
+.m1,[class*=m1-],.m-all,[class*=" m1-"],[class^=m1-],.m1,[class*=" m1-"] [class*=" m1-"],[class^=m1-] [class*=" m1-"],[class*=" m1-"] [class^=m1-],[class^=m1-] [class^=m1-],[class*=" m1-"] .m1,[class^=m1-] .m1,[class*=" m2-"] [class*=" m2-"],[class^=m2-] [class*=" m2-"],[class*=" m2-"] [class^=m2-],[class^=m2-] [class^=m2-],[class*=" m2-"] .m2,[class^=m2-] .m2{margin-left:0;clear:left;}
+
+/* Mobile grid floats ----- */
+
+[class*=" m-float"][class*=" m-float"],[class^=m-float][class^=m-float],[class*=" m-float"][class*=" m-float"],[class^=m-float][class^=m-float]{margin-left:3.125%;margin-right:3.125%;}
+.m-floatright{float:right;margin-right:0 !important;}
+.m-floatleft{float:left;margin-left:0 !important;}
+
+/* Mobile clearing ----- */
+
+.m2+[class*=" m2"],.m2+[class^=m2],[class*=-m2]+[class*=" m2"],[class*=-m2]+[class^=m2],.m-clear{clear:left;}
+.m-overlap[class*=overlap]{clear:none;}
+
+/* Mobile hiding ----- */
+
+.m-hide{display:none !important;}.m-show{display:block !important;}
+
+}
+
+@media only screen and (min-width:768px) and (max-width:989px) {
+
+/* Tablet grid: 4 column / gutter: 2.60416667% ---------------------------------------- */
+
+[class*=" t1"],[class^=t1],[class*=" t2"],[class^=t2],[class*=" t3"],[class^=t3],[class*=" t4"],[class^=t4],.t-all{display:block;float:left;margin-right:-100%;}
+
+/* Tablet grid spans ----- */
+
+.t1,.t2,.t3,.t4{width:23.04687501%;}.t1-t3 .t1,.t1-t3 .t2,.t1-t3 .t3,.t2-t4 .t2,.t2-t4 .t3,.t2-t4 .t4{width:30.99824868%;}.t1-t2 .t1,.t1-t2 .t2,.t2-t3 .t2,.t2-t3 .t3,.t3-t4 .t3,.t3-t4 .t4{width:47.32620321%;}.t1-t2,.t2-t3,.t3-t4{width:48.69791668%;}.t1-t3 .t1-t2,.t1-t3 .t2-t3,.t2-t4 .t2-t3,.t2-t4 .t3-t4{width:65.49912434%;}.t1-t3,.t2-t4{width:74.34895836%;}.t-all{width:100%;margin-left:0;margin-right:0;clear:left;}
+
+/* Tablet grid padding ----- */
+
+[class*=" t-pad"],[class^=t-pad]{padding-left:1.30208334%;padding-right:1.30208334%;left:-1.30208334%;}.t1-t3 [class*=" t-pad"],.t1-t3 [class^=t-pad],.t2-t4 [class*=" t-pad"],.t2-t4 [class^=t-pad]{padding-left:1.75131349%;padding-right:1.75131349%;left:-1.75131349%;}[class~=t-padfull],[class~=t-padinfull],[class~=t-padfull],[class~=t-padinfull],[class~=t-padfull],[class~=t-padinfull],[class~=t-padfull],[class~=t-padinfull]{padding-left:2.60416667%;padding-right:2.60416667%;left:-2.60416667%;}.t1-t2 [class*=" t-pad"],.t1-t2 [class^=t-pad],.t2-t3 [class*=" t-pad"],.t2-t3 [class^=t-pad],.t3-t4 [class*=" t-pad"],.t3-t4 [class^=t-pad]{padding-left:2.67379679%;padding-right:2.67379679%;left:-2.67379679%;}.t1-t3 [class~=t-padfull],.t1-t3 [class~=t-padinfull],.t1-t3 [class~=t-padfull],.t1-t3 [class~=t-padinfull],.t1-t3 [class~=t-padfull],.t1-t3 [class~=t-padinfull],.t2-t4 [class~=t-padfull],.t2-t4 [class~=t-padinfull],.t2-t4 [class~=t-padfull],.t2-t4 [class~=t-padinfull],.t2-t4 [class~=t-padfull],.t2-t4 [class~=t-padinfull]{padding-left:3.50262697%;padding-right:3.50262697%;left:-3.50262697%;}.t1-t2 [class~=t-padfull],.t1-t2 [class~=t-padinfull],.t1-t2 [class~=t-padfull],.t1-t2 [class~=t-padinfull],.t2-t3 [class~=t-padfull],.t2-t3 [class~=t-padinfull],.t2-t3 [class~=t-padfull],.t2-t3 [class~=t-padinfull],.t3-t4 [class~=t-padfull],.t3-t4 [class~=t-padinfull],.t3-t4 [class~=t-padfull],.t3-t4 [class~=t-padinfull]{padding-left:5.34759359%;padding-right:5.34759359%;left:-5.34759359%;}.t-pad,.t-padfull{position:relative;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}.t-padin[class~=t-padin],.t-padinfull[class~=t-padinfull]{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;left:0;}
+
+/* Tablet grid relationships ----- */
+
+[class*=" t4"],[class^=t4]{margin-left:76.95312503%;}.t2-t4 [class*=" t4"],.t2-t4 [class^=t4]{margin-left:69.00175131%;}.t2-t4 [class*=" t3"],.t2-t4 [class^=t3]{margin-left:34.50087566%;}.t3-t4 [class*=" t4"],.t3-t4 [class^=t4]{margin-left:52.6737968%;}[class*=" t3"],[class^=t3]{margin-left:51.30208335%;}.t1-t3 [class*=" t3"],.t1-t3 [class^=t3]{margin-left:69.00175131%;}.t1-t3 [class*=" t2"],.t1-t3 [class^=t2]{margin-left:34.50087566%;}.t2-t3 [class*=" t3"],.t2-t3 [class^=t3]{margin-left:52.6737968%;}[class*=" t2"],[class^=t2]{margin-left:25.65104168%;}.t1-t2 [class*=" t2"],.t1-t2 [class^=t2]{margin-left:52.67379679%;}
+.t1,[class*=t1-],.t-all,[class*=" t1-"],[class^=t1-],.t1,[class*=" t1-"] [class*=" t1-"],[class^=t1-] [class*=" t1-"],[class*=" t1-"] [class^=t1-],[class^=t1-] [class^=t1-],[class*=" t1-"] .t1,[class^=t1-] .t1,[class*=" t2-"] [class*=" t2-"],[class^=t2-] [class*=" t2-"],[class*=" t2-"] [class^=t2-],[class^=t2-] [class^=t2-],[class*=" t2-"] .t2,[class^=t2-] .t2,[class*=" t3-"] [class*=" t3-"],[class^=t3-] [class*=" t3-"],[class*=" t3-"] [class^=t3-],[class^=t3-] [class^=t3-],[class*=" t3-"] .t3,[class^=t3-] .t3,[class*=" t4-"] [class*=" t4-"],[class^=t4-] [class*=" t4-"],[class*=" t4-"] [class^=t4-],[class^=t4-] [class^=t4-],[class*=" t4-"] .t4,[class^=t4-] .t4{margin-left:0;clear:left;}
+
+/* Tablet grid floats ----- */
+
+[class*=" t-float"][class*=" t-float"],[class^=t-float][class^=t-float],[class*=" t-float"][class*=" t-float"],[class^=t-float][class^=t-float],[class*=" t-float"][class*=" t-float"],[class^=t-float][class^=t-float],[class*=" t-float"][class*=" t-float"],[class^=t-float][class^=t-float]{margin-left:2.60416667%;margin-right:2.60416667%;}.t1-t3 [class*=" t-float"][class*=" t-float"],.t1-t3 [class^=t-float][class^=t-float],.t1-t3 [class*=" t-float"][class*=" t-float"],.t1-t3 [class^=t-float][class^=t-float],.t1-t3 [class*=" t-float"][class*=" t-float"],.t1-t3 [class^=t-float][class^=t-float],.t2-t4 [class*=" t-float"][class*=" t-float"],.t2-t4 [class^=t-float][class^=t-float],.t2-t4 [class*=" t-float"][class*=" t-float"],.t2-t4 [class^=t-float][class^=t-float],.t2-t4 [class*=" t-float"][class*=" t-float"],.t2-t4 [class^=t-float][class^=t-float]{margin-left:3.5026269734547%;margin-right:3.5026269734547%;}.t1-t2 [class*=" t-float"][class*=" t-float"],.t1-t2 [class^=t-float][class^=t-float],.t1-t2 [class*=" t-float"][class*=" t-float"],.t1-t2 [class^=t-float][class^=t-float],.t2-t3 [class*=" t-float"][class*=" t-float"],.t2-t3 [class^=t-float][class^=t-float],.t2-t3 [class*=" t-float"][class*=" t-float"],.t2-t3 [class^=t-float][class^=t-float],.t3-t4 [class*=" t-float"][class*=" t-float"],.t3-t4 [class^=t-float][class^=t-float],.t3-t4 [class*=" t-float"][class*=" t-float"],.t3-t4 [class^=t-float][class^=t-float]{margin-left:5.3475935882685%;margin-right:5.3475935882685%;}
+.t-floatright{float:right;margin-right:0 !important;}
+.t-floatleft{float:left;margin-left:0 !important;}
+
+/* Tablet clearing ----- */
+
+.t2+[class*=" t2"],.t2+[class^=t2],[class*=-t2]+[class*=" t2"],[class*=-t2]+[class^=t2],.t3+[class*=" t3"],.t3+[class^=t3],[class*=-t3]+[class*=" t3"],[class*=-t3]+[class^=t3],.t3+[class*=" t2"],.t3+[class^=t2],[class*=-t3]+[class*=" t2"],[class*=-t3]+[class^=t2],.t4+[class*=" t4"],.t4+[class^=t4],[class*=-t4]+[class*=" t4"],[class*=-t4]+[class^=t4],.t4+[class*=" t3"],.t4+[class^=t3],[class*=-t4]+[class*=" t3"],[class*=-t4]+[class^=t3],.t4+[class*=" t2"],.t4+[class^=t2],[class*=-t4]+[class*=" t2"],[class*=-t4]+[class^=t2],.t-clear{clear:left;}
+.t-overlap[class*=overlap]{clear:none;}
+
+/* Tablet hiding ----- */
+
+.t-hide{display:none !important;}.t-show{display:block !important;}
+
+}
+
+@media only screen and (min-width:990px) {
+
+/* Desktop A grid: 6 column / gutter: 3.03030303% ---------------------------------------- */
+
+[class*=" da1"],[class^=da1],[class*=" da2"],[class^=da2],[class*=" da3"],[class^=da3],[class*=" da4"],[class^=da4],[class*=" da5"],[class^=da5],[class*=" da6"],[class^=da6],.da-all{display:block;float:left;margin-right:-100%;}
+
+/* Desktop A grid spans ----- */
+
+.da1,.da2,.da3,.da4,.da5,.da6{width:14.14141414%;}.da1-da5 .da1,.da1-da5 .da2,.da1-da5 .da3,.da1-da5 .da4,.da1-da5 .da5,.da2-da6 .da2,.da2-da6 .da3,.da2-da6 .da4,.da2-da6 .da5,.da2-da6 .da6{width:17.07317073%;}.da1-da4 .da1,.da1-da4 .da2,.da1-da4 .da3,.da1-da4 .da4,.da2-da5 .da2,.da2-da5 .da3,.da2-da5 .da4,.da2-da5 .da5,.da3-da6 .da3,.da3-da6 .da4,.da3-da6 .da5,.da3-da6 .da6{width:21.53846154%;}.da1-da3 .da1,.da1-da3 .da2,.da1-da3 .da3,.da2-da4 .da2,.da2-da4 .da3,.da2-da4 .da4,.da3-da5 .da3,.da3-da5 .da4,.da3-da5 .da5,.da4-da6 .da4,.da4-da6 .da5,.da4-da6 .da6{width:29.16666666%;}.da1-da2,.da2-da3,.da3-da4,.da4-da5,.da5-da6{width:31.31313131%;}.da1-da5 .da1-da2,.da1-da5 .da2-da3,.da1-da5 .da3-da4,.da1-da5 .da4-da5,.da2-da6 .da2-da3,.da2-da6 .da3-da4,.da2-da6 .da4-da5,.da2-da6 .da5-da6{width:37.80487804%;}.da1-da2 .da1,.da1-da2 .da2,.da2-da3 .da2,.da2-da3 .da3,.da3-da4 .da3,.da3-da4 .da4,.da4-da5 .da4,.da4-da5 .da5,.da5-da6 .da5,.da5-da6 .da6{width:45.16129033%;}.da1-da4 .da1-da2,.da1-da4 .da2-da3,.da1-da4 .da3-da4,.da2-da5 .da2-da3,.da2-da5 .da3-da4,.da2-da5 .da4-da5,.da3-da6 .da3-da4,.da3-da6 .da4-da5,.da3-da6 .da5-da6{width:47.69230769%;}.da1-da3,.da2-da4,.da3-da5,.da4-da6{width:48.48484849%;}.da1-da5 .da1-da3,.da1-da5 .da2-da4,.da1-da5 .da3-da5,.da2-da6 .da2-da4,.da2-da6 .da3-da5,.da2-da6 .da4-da6{width:58.53658537%;}.da1-da3 .da1-da2,.da1-da3 .da2-da3,.da2-da4 .da2-da3,.da2-da4 .da3-da4,.da3-da5 .da3-da4,.da3-da5 .da4-da5,.da4-da6 .da4-da5,.da4-da6 .da5-da6{width:64.58333332%;}.da1-da4,.da2-da5,.da3-da6{width:65.65656566%;}.da1-da4 .da1-da3,.da1-da4 .da2-da4,.da2-da5 .da2-da4,.da2-da5 .da3-da5,.da3-da6 .da3-da5,.da3-da6 .da4-da6{width:73.84615385%;}.da1-da5 .da1-da4,.da1-da5 .da2-da5,.da2-da6 .da2-da5,.da2-da6 .da3-da6{width:79.26829269%;}.da1-da5,.da2-da6{width:82.82828283%;}.da-all{width:100%;margin-left:0;margin-right:0;clear:left;}
+
+/* Desktop A grid padding ----- */
+
+[class*=" da-pad"],[class^=da-pad]{padding-left:1.51515152%;padding-right:1.51515152%;left:-1.51515152%;}.da1-da5 [class*=" da-pad"],.da1-da5 [class^=da-pad],.da2-da6 [class*=" da-pad"],.da2-da6 [class^=da-pad]{padding-left:1.82926829%;padding-right:1.82926829%;left:-1.82926829%;}.da1-da4 [class*=" da-pad"],.da1-da4 [class^=da-pad],.da2-da5 [class*=" da-pad"],.da2-da5 [class^=da-pad],.da3-da6 [class*=" da-pad"],.da3-da6 [class^=da-pad]{padding-left:2.30769231%;padding-right:2.30769231%;left:-2.30769231%;}[class~=da-padfull],[class~=da-padinfull],[class~=da-padfull],[class~=da-padinfull],[class~=da-padfull],[class~=da-padinfull],[class~=da-padfull],[class~=da-padinfull],[class~=da-padfull],[class~=da-padinfull],[class~=da-padfull],[class~=da-padinfull]{padding-left:3.03030303%;padding-right:3.03030303%;left:-3.03030303%;}.da1-da3 [class*=" da-pad"],.da1-da3 [class^=da-pad],.da2-da4 [class*=" da-pad"],.da2-da4 [class^=da-pad],.da3-da5 [class*=" da-pad"],.da3-da5 [class^=da-pad],.da4-da6 [class*=" da-pad"],.da4-da6 [class^=da-pad]{padding-left:3.125%;padding-right:3.125%;left:-3.125%;}.da1-da5 [class~=da-padfull],.da1-da5 [class~=da-padinfull],.da1-da5 [class~=da-padfull],.da1-da5 [class~=da-padinfull],.da1-da5 [class~=da-padfull],.da1-da5 [class~=da-padinfull],.da1-da5 [class~=da-padfull],.da1-da5 [class~=da-padinfull],.da1-da5 [class~=da-padfull],.da1-da5 [class~=da-padinfull],.da2-da6 [class~=da-padfull],.da2-da6 [class~=da-padinfull],.da2-da6 [class~=da-padfull],.da2-da6 [class~=da-padinfull],.da2-da6 [class~=da-padfull],.da2-da6 [class~=da-padinfull],.da2-da6 [class~=da-padfull],.da2-da6 [class~=da-padinfull],.da2-da6 [class~=da-padfull],.da2-da6 [class~=da-padinfull]{padding-left:3.65853658%;padding-right:3.65853658%;left:-3.65853658%;}.da1-da4 [class~=da-padfull],.da1-da4 [class~=da-padinfull],.da1-da4 [class~=da-padfull],.da1-da4 [class~=da-padinfull],.da1-da4 [class~=da-padfull],.da1-da4 [class~=da-padinfull],.da1-da4 [class~=da-padfull],.da1-da4 [class~=da-padinfull],.da2-da5 [class~=da-padfull],.da2-da5 [class~=da-padinfull],.da2-da5 [class~=da-padfull],.da2-da5 [class~=da-padinfull],.da2-da5 [class~=da-padfull],.da2-da5 [class~=da-padinfull],.da2-da5 [class~=da-padfull],.da2-da5 [class~=da-padinfull],.da3-da6 [class~=da-padfull],.da3-da6 [class~=da-padinfull],.da3-da6 [class~=da-padfull],.da3-da6 [class~=da-padinfull],.da3-da6 [class~=da-padfull],.da3-da6 [class~=da-padinfull],.da3-da6 [class~=da-padfull],.da3-da6 [class~=da-padinfull]{padding-left:4.61538461%;padding-right:4.61538461%;left:-4.61538461%;}.da1-da2 [class*=" da-pad"],.da1-da2 [class^=da-pad],.da2-da3 [class*=" da-pad"],.da2-da3 [class^=da-pad],.da3-da4 [class*=" da-pad"],.da3-da4 [class^=da-pad],.da4-da5 [class*=" da-pad"],.da4-da5 [class^=da-pad],.da5-da6 [class*=" da-pad"],.da5-da6 [class^=da-pad]{padding-left:4.83870968%;padding-right:4.83870968%;left:-4.83870968%;}.da1-da3 [class~=da-padfull],.da1-da3 [class~=da-padinfull],.da1-da3 [class~=da-padfull],.da1-da3 [class~=da-padinfull],.da1-da3 [class~=da-padfull],.da1-da3 [class~=da-padinfull],.da2-da4 [class~=da-padfull],.da2-da4 [class~=da-padinfull],.da2-da4 [class~=da-padfull],.da2-da4 [class~=da-padinfull],.da2-da4 [class~=da-padfull],.da2-da4 [class~=da-padinfull],.da3-da5 [class~=da-padfull],.da3-da5 [class~=da-padinfull],.da3-da5 [class~=da-padfull],.da3-da5 [class~=da-padinfull],.da3-da5 [class~=da-padfull],.da3-da5 [class~=da-padinfull],.da4-da6 [class~=da-padfull],.da4-da6 [class~=da-padinfull],.da4-da6 [class~=da-padfull],.da4-da6 [class~=da-padinfull],.da4-da6 [class~=da-padfull],.da4-da6 [class~=da-padinfull]{padding-left:6.25%;padding-right:6.25%;left:-6.25%;}.da1-da2 [class~=da-padfull],.da1-da2 [class~=da-padinfull],.da1-da2 [class~=da-padfull],.da1-da2 [class~=da-padinfull],.da2-da3 [class~=da-padfull],.da2-da3 [class~=da-padinfull],.da2-da3 [class~=da-padfull],.da2-da3 [class~=da-padinfull],.da3-da4 [class~=da-padfull],.da3-da4 [class~=da-padinfull],.da3-da4 [class~=da-padfull],.da3-da4 [class~=da-padinfull],.da4-da5 [class~=da-padfull],.da4-da5 [class~=da-padinfull],.da4-da5 [class~=da-padfull],.da4-da5 [class~=da-padinfull],.da5-da6 [class~=da-padfull],.da5-da6 [class~=da-padinfull],.da5-da6 [class~=da-padfull],.da5-da6 [class~=da-padinfull]{padding-left:9.67741935%;padding-right:9.67741935%;left:-9.67741935%;}.da-pad,.da-padfull{position:relative;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}.da-padin[class~=da-padin],.da-padinfull[class~=da-padinfull]{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;left:0;}
+
+/* Desktop A grid relationships ----- */
+
+[class*=" da6"],[class^=da6]{margin-left:85.85858586%;}.da2-da6 [class*=" da6"],.da2-da6 [class^=da6]{margin-left:82.92682927%;}.da2-da6 [class*=" da5"],.da2-da6 [class^=da5]{margin-left:62.19512196%;}.da2-da6 [class*=" da4"],.da2-da6 [class^=da4]{margin-left:41.46341463%;}.da2-da6 [class*=" da3"],.da2-da6 [class^=da3]{margin-left:20.73170731%;}.da3-da6 [class*=" da6"],.da3-da6 [class^=da6]{margin-left:78.46153846%;}.da3-da6 [class*=" da5"],.da3-da6 [class^=da5]{margin-left:52.3076923%;}.da3-da6 [class*=" da4"],.da3-da6 [class^=da4]{margin-left:26.15384615%;}.da4-da6 [class*=" da6"],.da4-da6 [class^=da6]{margin-left:70.83333332%;}.da4-da6 [class*=" da5"],.da4-da6 [class^=da5]{margin-left:35.41666666%;}.da5-da6 [class*=" da6"],.da5-da6 [class^=da6]{margin-left:54.83870968%;}[class*=" da5"],[class^=da5]{margin-left:68.68686869%;}.da1-da5 [class*=" da5"],.da1-da5 [class^=da5]{margin-left:82.92682927%;}.da1-da5 [class*=" da4"],.da1-da5 [class^=da4]{margin-left:62.19512196%;}.da1-da5 [class*=" da3"],.da1-da5 [class^=da3]{margin-left:41.46341463%;}.da1-da5 [class*=" da2"],.da1-da5 [class^=da2]{margin-left:20.73170732%;}.da2-da5 [class*=" da5"],.da2-da5 [class^=da5]{margin-left:78.46153846%;}.da2-da5 [class*=" da4"],.da2-da5 [class^=da4]{margin-left:52.3076923%;}.da2-da5 [class*=" da3"],.da2-da5 [class^=da3]{margin-left:26.15384615%;}.da3-da5 [class*=" da5"],.da3-da5 [class^=da5]{margin-left:70.83333332%;}.da3-da5 [class*=" da4"],.da3-da5 [class^=da4]{margin-left:35.41666666%;}.da4-da5 [class*=" da5"],.da4-da5 [class^=da5]{margin-left:54.83870968%;}[class*=" da4"],[class^=da4]{margin-left:51.51515152%;}.da1-da4 [class*=" da4"],.da1-da4 [class^=da4]{margin-left:78.46153846%;}.da1-da4 [class*=" da3"],.da1-da4 [class^=da3]{margin-left:52.3076923%;}.da1-da4 [class*=" da2"],.da1-da4 [class^=da2]{margin-left:26.15384615%;}.da2-da4 [class*=" da4"],.da2-da4 [class^=da4]{margin-left:70.83333332%;}.da2-da4 [class*=" da3"],.da2-da4 [class^=da3]{margin-left:35.41666666%;}.da3-da4 [class*=" da4"],.da3-da4 [class^=da4]{margin-left:54.83870968%;}[class*=" da3"],[class^=da3]{margin-left:34.34343434%;}.da1-da3 [class*=" da3"],.da1-da3 [class^=da3]{margin-left:70.83333332%;}.da1-da3 [class*=" da2"],.da1-da3 [class^=da2]{margin-left:35.41666666%;}.da2-da3 [class*=" da3"],.da2-da3 [class^=da3]{margin-left:54.83870968%;}[class*=" da2"],[class^=da2]{margin-left:17.17171717%;}.da1-da2 [class*=" da2"],.da1-da2 [class^=da2]{margin-left:54.83870968%;}
+.da1,[class*=da1-],.da-all,[class*=" da1-"],[class^=da1-],.da1,[class*=" da1-"] [class*=" da1-"],[class^=da1-] [class*=" da1-"],[class*=" da1-"] [class^=da1-],[class^=da1-] [class^=da1-],[class*=" da1-"] .da1,[class^=da1-] .da1,[class*=" da2-"] [class*=" da2-"],[class^=da2-] [class*=" da2-"],[class*=" da2-"] [class^=da2-],[class^=da2-] [class^=da2-],[class*=" da2-"] .da2,[class^=da2-] .da2,[class*=" da3-"] [class*=" da3-"],[class^=da3-] [class*=" da3-"],[class*=" da3-"] [class^=da3-],[class^=da3-] [class^=da3-],[class*=" da3-"] .da3,[class^=da3-] .da3,[class*=" da4-"] [class*=" da4-"],[class^=da4-] [class*=" da4-"],[class*=" da4-"] [class^=da4-],[class^=da4-] [class^=da4-],[class*=" da4-"] .da4,[class^=da4-] .da4,[class*=" da5-"] [class*=" da5-"],[class^=da5-] [class*=" da5-"],[class*=" da5-"] [class^=da5-],[class^=da5-] [class^=da5-],[class*=" da5-"] .da5,[class^=da5-] .da5,[class*=" da6-"] [class*=" da6-"],[class^=da6-] [class*=" da6-"],[class*=" da6-"] [class^=da6-],[class^=da6-] [class^=da6-],[class*=" da6-"] .da6,[class^=da6-] .da6{margin-left:0;clear:left;}
+
+/* Desktop A grid floats ----- */
+
+[class*=" da-float"][class*=" da-float"],[class^=da-float][class^=da-float],[class*=" da-float"][class*=" da-float"],[class^=da-float][class^=da-float],[class*=" da-float"][class*=" da-float"],[class^=da-float][class^=da-float],[class*=" da-float"][class*=" da-float"],[class^=da-float][class^=da-float],[class*=" da-float"][class*=" da-float"],[class^=da-float][class^=da-float],[class*=" da-float"][class*=" da-float"],[class^=da-float][class^=da-float]{margin-left:3.03030303%;margin-right:3.03030303%;}.da1-da5 [class*=" da-float"][class*=" da-float"],.da1-da5 [class^=da-float][class^=da-float],.da1-da5 [class*=" da-float"][class*=" da-float"],.da1-da5 [class^=da-float][class^=da-float],.da1-da5 [class*=" da-float"][class*=" da-float"],.da1-da5 [class^=da-float][class^=da-float],.da1-da5 [class*=" da-float"][class*=" da-float"],.da1-da5 [class^=da-float][class^=da-float],.da1-da5 [class*=" da-float"][class*=" da-float"],.da1-da5 [class^=da-float][class^=da-float],.da2-da6 [class*=" da-float"][class*=" da-float"],.da2-da6 [class^=da-float][class^=da-float],.da2-da6 [class*=" da-float"][class*=" da-float"],.da2-da6 [class^=da-float][class^=da-float],.da2-da6 [class*=" da-float"][class*=" da-float"],.da2-da6 [class^=da-float][class^=da-float],.da2-da6 [class*=" da-float"][class*=" da-float"],.da2-da6 [class^=da-float][class^=da-float],.da2-da6 [class*=" da-float"][class*=" da-float"],.da2-da6 [class^=da-float][class^=da-float]{margin-left:3.6585365849242%;margin-right:3.6585365849242%;}.da1-da4 [class*=" da-float"][class*=" da-float"],.da1-da4 [class^=da-float][class^=da-float],.da1-da4 [class*=" da-float"][class*=" da-float"],.da1-da4 [class^=da-float][class^=da-float],.da1-da4 [class*=" da-float"][class*=" da-float"],.da1-da4 [class^=da-float][class^=da-float],.da1-da4 [class*=" da-float"][class*=" da-float"],.da1-da4 [class^=da-float][class^=da-float],.da2-da5 [class*=" da-float"][class*=" da-float"],.da2-da5 [class^=da-float][class^=da-float],.da2-da5 [class*=" da-float"][class*=" da-float"],.da2-da5 [class^=da-float][class^=da-float],.da2-da5 [class*=" da-float"][class*=" da-float"],.da2-da5 [class^=da-float][class^=da-float],.da2-da5 [class*=" da-float"][class*=" da-float"],.da2-da5 [class^=da-float][class^=da-float],.da3-da6 [class*=" da-float"][class*=" da-float"],.da3-da6 [class^=da-float][class^=da-float],.da3-da6 [class*=" da-float"][class*=" da-float"],.da3-da6 [class^=da-float][class^=da-float],.da3-da6 [class*=" da-float"][class*=" da-float"],.da3-da6 [class^=da-float][class^=da-float],.da3-da6 [class*=" da-float"][class*=" da-float"],.da3-da6 [class^=da-float][class^=da-float]{margin-left:4.6153846146817%;margin-right:4.6153846146817%;}.da1-da3 [class*=" da-float"][class*=" da-float"],.da1-da3 [class^=da-float][class^=da-float],.da1-da3 [class*=" da-float"][class*=" da-float"],.da1-da3 [class^=da-float][class^=da-float],.da1-da3 [class*=" da-float"][class*=" da-float"],.da1-da3 [class^=da-float][class^=da-float],.da2-da4 [class*=" da-float"][class*=" da-float"],.da2-da4 [class^=da-float][class^=da-float],.da2-da4 [class*=" da-float"][class*=" da-float"],.da2-da4 [class^=da-float][class^=da-float],.da2-da4 [class*=" da-float"][class*=" da-float"],.da2-da4 [class^=da-float][class^=da-float],.da3-da5 [class*=" da-float"][class*=" da-float"],.da3-da5 [class^=da-float][class^=da-float],.da3-da5 [class*=" da-float"][class*=" da-float"],.da3-da5 [class^=da-float][class^=da-float],.da3-da5 [class*=" da-float"][class*=" da-float"],.da3-da5 [class^=da-float][class^=da-float],.da4-da6 [class*=" da-float"][class*=" da-float"],.da4-da6 [class^=da-float][class^=da-float],.da4-da6 [class*=" da-float"][class*=" da-float"],.da4-da6 [class^=da-float][class^=da-float],.da4-da6 [class*=" da-float"][class*=" da-float"],.da4-da6 [class^=da-float][class^=da-float]{margin-left:6.2499999987109%;margin-right:6.2499999987109%;}.da1-da2 [class*=" da-float"][class*=" da-float"],.da1-da2 [class^=da-float][class^=da-float],.da1-da2 [class*=" da-float"][class*=" da-float"],.da1-da2 [class^=da-float][class^=da-float],.da2-da3 [class*=" da-float"][class*=" da-float"],.da2-da3 [class^=da-float][class^=da-float],.da2-da3 [class*=" da-float"][class*=" da-float"],.da2-da3 [class^=da-float][class^=da-float],.da3-da4 [class*=" da-float"][class*=" da-float"],.da3-da4 [class^=da-float][class^=da-float],.da3-da4 [class*=" da-float"][class*=" da-float"],.da3-da4 [class^=da-float][class^=da-float],.da4-da5 [class*=" da-float"][class*=" da-float"],.da4-da5 [class^=da-float][class^=da-float],.da4-da5 [class*=" da-float"][class*=" da-float"],.da4-da5 [class^=da-float][class^=da-float],.da5-da6 [class*=" da-float"][class*=" da-float"],.da5-da6 [class^=da-float][class^=da-float],.da5-da6 [class*=" da-float"][class*=" da-float"],.da5-da6 [class^=da-float][class^=da-float]{margin-left:9.6774193548387%;margin-right:9.6774193548387%;}
+.da-floatright{float:right;margin-right:0 !important;}
+.da-floatleft{float:left;margin-left:0 !important;}
+
+/* Desktop A clearing ----- */
+
+.da2+[class*=" da2"],.da2+[class^=da2],[class*=-da2]+[class*=" da2"],[class*=-da2]+[class^=da2],.da3+[class*=" da3"],.da3+[class^=da3],[class*=-da3]+[class*=" da3"],[class*=-da3]+[class^=da3],.da3+[class*=" da2"],.da3+[class^=da2],[class*=-da3]+[class*=" da2"],[class*=-da3]+[class^=da2],.da4+[class*=" da4"],.da4+[class^=da4],[class*=-da4]+[class*=" da4"],[class*=-da4]+[class^=da4],.da4+[class*=" da3"],.da4+[class^=da3],[class*=-da4]+[class*=" da3"],[class*=-da4]+[class^=da3],.da4+[class*=" da2"],.da4+[class^=da2],[class*=-da4]+[class*=" da2"],[class*=-da4]+[class^=da2],.da5+[class*=" da5"],.da5+[class^=da5],[class*=-da5]+[class*=" da5"],[class*=-da5]+[class^=da5],.da5+[class*=" da4"],.da5+[class^=da4],[class*=-da5]+[class*=" da4"],[class*=-da5]+[class^=da4],.da5+[class*=" da3"],.da5+[class^=da3],[class*=-da5]+[class*=" da3"],[class*=-da5]+[class^=da3],.da5+[class*=" da2"],.da5+[class^=da2],[class*=-da5]+[class*=" da2"],[class*=-da5]+[class^=da2],.da6+[class*=" da6"],.da6+[class^=da6],[class*=-da6]+[class*=" da6"],[class*=-da6]+[class^=da6],.da6+[class*=" da5"],.da6+[class^=da5],[class*=-da6]+[class*=" da5"],[class*=-da6]+[class^=da5],.da6+[class*=" da4"],.da6+[class^=da4],[class*=-da6]+[class*=" da4"],[class*=-da6]+[class^=da4],.da6+[class*=" da3"],.da6+[class^=da3],[class*=-da6]+[class*=" da3"],[class*=-da6]+[class^=da3],.da6+[class*=" da2"],.da6+[class^=da2],[class*=-da6]+[class*=" da2"],[class*=-da6]+[class^=da2],.da-clear{clear:left;}
+.da-overlap[class*=overlap]{clear:none;}
+
+/* Desktop A hiding ----- */
+
+.da-hide{display:none !important;}.da-show{display:block !important;}
+
+/* Desktop B grid: 4 column / gutter: 3.03030303% ---------------------------------------- */
+
+[class*=" db1"],[class^=db1],[class*=" db2"],[class^=db2],[class*=" db3"],[class^=db3],[class*=" db4"],[class^=db4],.db-all{display:block;float:left;margin-right:-100%;}
+
+/* Desktop B grid spans ----- */
+
+.db1,.db2,.db3,.db4{width:22.72727273%;}.db1-db3 .db1,.db1-db3 .db2,.db1-db3 .db3,.db2-db4 .db2,.db2-db4 .db3,.db2-db4 .db4{width:30.6122449%;}.db1-db2 .db1,.db1-db2 .db2,.db2-db3 .db2,.db2-db3 .db3,.db3-db4 .db3,.db3-db4 .db4{width:46.875%;}.db1-db2,.db2-db3,.db3-db4{width:48.48484849%;}.db1-db3 .db1-db2,.db1-db3 .db2-db3,.db2-db4 .db2-db3,.db2-db4 .db3-db4{width:65.30612246%;}.db1-db3,.db2-db4{width:74.24242424%;}.db-all{width:100%;margin-left:0;margin-right:0;clear:left;}
+
+/* Desktop B grid padding ----- */
+
+[class*=" db-pad"],[class^=db-pad]{padding-left:1.51515152%;padding-right:1.51515152%;left:-1.51515152%;}.db1-db3 [class*=" db-pad"],.db1-db3 [class^=db-pad],.db2-db4 [class*=" db-pad"],.db2-db4 [class^=db-pad]{padding-left:2.04081633%;padding-right:2.04081633%;left:-2.04081633%;}[class~=db-padfull],[class~=db-padinfull],[class~=db-padfull],[class~=db-padinfull],[class~=db-padfull],[class~=db-padinfull],[class~=db-padfull],[class~=db-padinfull]{padding-left:3.03030303%;padding-right:3.03030303%;left:-3.03030303%;}.db1-db2 [class*=" db-pad"],.db1-db2 [class^=db-pad],.db2-db3 [class*=" db-pad"],.db2-db3 [class^=db-pad],.db3-db4 [class*=" db-pad"],.db3-db4 [class^=db-pad]{padding-left:3.125%;padding-right:3.125%;left:-3.125%;}.db1-db3 [class~=db-padfull],.db1-db3 [class~=db-padinfull],.db1-db3 [class~=db-padfull],.db1-db3 [class~=db-padinfull],.db1-db3 [class~=db-padfull],.db1-db3 [class~=db-padinfull],.db2-db4 [class~=db-padfull],.db2-db4 [class~=db-padinfull],.db2-db4 [class~=db-padfull],.db2-db4 [class~=db-padinfull],.db2-db4 [class~=db-padfull],.db2-db4 [class~=db-padinfull]{padding-left:4.08163265%;padding-right:4.08163265%;left:-4.08163265%;}.db1-db2 [class~=db-padfull],.db1-db2 [class~=db-padinfull],.db1-db2 [class~=db-padfull],.db1-db2 [class~=db-padinfull],.db2-db3 [class~=db-padfull],.db2-db3 [class~=db-padinfull],.db2-db3 [class~=db-padfull],.db2-db3 [class~=db-padinfull],.db3-db4 [class~=db-padfull],.db3-db4 [class~=db-padinfull],.db3-db4 [class~=db-padfull],.db3-db4 [class~=db-padinfull]{padding-left:6.25%;padding-right:6.25%;left:-6.25%;}.db-pad,.db-padfull{position:relative;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}.db-padin[class~=db-padin],.db-padinfull[class~=db-padinfull]{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;left:0;}
+
+/* Desktop B grid relationships ----- */
+
+[class*=" db4"],[class^=db4]{margin-left:77.27272727%;}.db2-db4 [class*=" db4"],.db2-db4 [class^=db4]{margin-left:69.38775511%;}.db2-db4 [class*=" db3"],.db2-db4 [class^=db3]{margin-left:34.69387756%;}.db3-db4 [class*=" db4"],.db3-db4 [class^=db4]{margin-left:53.125%;}[class*=" db3"],[class^=db3]{margin-left:51.51515152%;}.db1-db3 [class*=" db3"],.db1-db3 [class^=db3]{margin-left:69.38775511%;}.db1-db3 [class*=" db2"],.db1-db3 [class^=db2]{margin-left:34.69387755%;}.db2-db3 [class*=" db3"],.db2-db3 [class^=db3]{margin-left:53.125%;}[class*=" db2"],[class^=db2]{margin-left:25.75757576%;}.db1-db2 [class*=" db2"],.db1-db2 [class^=db2]{margin-left:53.12499999%;}
+.db1,[class*=db1-],.db-all,[class*=" db1-"],[class^=db1-],.db1,[class*=" db1-"] [class*=" db1-"],[class^=db1-] [class*=" db1-"],[class*=" db1-"] [class^=db1-],[class^=db1-] [class^=db1-],[class*=" db1-"] .db1,[class^=db1-] .db1,[class*=" db2-"] [class*=" db2-"],[class^=db2-] [class*=" db2-"],[class*=" db2-"] [class^=db2-],[class^=db2-] [class^=db2-],[class*=" db2-"] .db2,[class^=db2-] .db2,[class*=" db3-"] [class*=" db3-"],[class^=db3-] [class*=" db3-"],[class*=" db3-"] [class^=db3-],[class^=db3-] [class^=db3-],[class*=" db3-"] .db3,[class^=db3-] .db3,[class*=" db4-"] [class*=" db4-"],[class^=db4-] [class*=" db4-"],[class*=" db4-"] [class^=db4-],[class^=db4-] [class^=db4-],[class*=" db4-"] .db4,[class^=db4-] .db4{margin-left:0;clear:left;}
+
+/* Desktop B grid floats ----- */
+
+[class*=" db-float"][class*=" db-float"],[class^=db-float][class^=db-float],[class*=" db-float"][class*=" db-float"],[class^=db-float][class^=db-float],[class*=" db-float"][class*=" db-float"],[class^=db-float][class^=db-float],[class*=" db-float"][class*=" db-float"],[class^=db-float][class^=db-float]{margin-left:3.03030303%;margin-right:3.03030303%;}.db1-db3 [class*=" db-float"][class*=" db-float"],.db1-db3 [class^=db-float][class^=db-float],.db1-db3 [class*=" db-float"][class*=" db-float"],.db1-db3 [class^=db-float][class^=db-float],.db1-db3 [class*=" db-float"][class*=" db-float"],.db1-db3 [class^=db-float][class^=db-float],.db2-db4 [class*=" db-float"][class*=" db-float"],.db2-db4 [class^=db-float][class^=db-float],.db2-db4 [class*=" db-float"][class*=" db-float"],.db2-db4 [class^=db-float][class^=db-float],.db2-db4 [class*=" db-float"][class*=" db-float"],.db2-db4 [class^=db-float][class^=db-float]{margin-left:4.0816326527863%;margin-right:4.0816326527863%;}.db1-db2 [class*=" db-float"][class*=" db-float"],.db1-db2 [class^=db-float][class^=db-float],.db1-db2 [class*=" db-float"][class*=" db-float"],.db1-db2 [class^=db-float][class^=db-float],.db2-db3 [class*=" db-float"][class*=" db-float"],.db2-db3 [class^=db-float][class^=db-float],.db2-db3 [class*=" db-float"][class*=" db-float"],.db2-db3 [class^=db-float][class^=db-float],.db3-db4 [class*=" db-float"][class*=" db-float"],.db3-db4 [class^=db-float][class^=db-float],.db3-db4 [class*=" db-float"][class*=" db-float"],.db3-db4 [class^=db-float][class^=db-float]{margin-left:6.2499999987109%;margin-right:6.2499999987109%;}
+.db-floatright{float:right;margin-right:0 !important;}
+.db-floatleft{float:left;margin-left:0 !important;}
+
+/* Desktop B clearing ----- */
+
+.db2+[class*=" db2"],.db2+[class^=db2],[class*=-db2]+[class*=" db2"],[class*=-db2]+[class^=db2],.db3+[class*=" db3"],.db3+[class^=db3],[class*=-db3]+[class*=" db3"],[class*=-db3]+[class^=db3],.db3+[class*=" db2"],.db3+[class^=db2],[class*=-db3]+[class*=" db2"],[class*=-db3]+[class^=db2],.db4+[class*=" db4"],.db4+[class^=db4],[class*=-db4]+[class*=" db4"],[class*=-db4]+[class^=db4],.db4+[class*=" db3"],.db4+[class^=db3],[class*=-db4]+[class*=" db3"],[class*=-db4]+[class^=db3],.db4+[class*=" db2"],.db4+[class^=db2],[class*=-db4]+[class*=" db2"],[class*=-db4]+[class^=db2],.db-clear{clear:left;}
+.db-overlap[class*=overlap]{clear:none;}
+
+/* Desktop B hiding ----- */
+
+.db-hide{display:none !important;}.db-show{display:block !important;}
+
+}
+

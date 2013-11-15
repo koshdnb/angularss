@@ -1,0 +1,27 @@
+<header>
+  <h2>Collection of Feeds</h2>
+</header>
+
+<div ng-if="!hasFeeds()">
+  You currently have no feeds. <a href="/feeds/new">Click here to create one</a>.
+</div>
+
+<div ng-if="hasFeeds()" class="">
+  <section  ng-repeat="feed in feeds | clearEmpty track by feed.id">
+      <header>
+          <h3><a href="/feeds/{{ feed.id }}">{{ feed.title }}</a></h3>
+          <p>By {{feed.author}}</p>
+      </header>
+      <div>
+          <p class="feed-desc">
+                description : {{ feed.description }}
+            </p>
+            <p>
+               Resource:  <a href="{{feed.link}}">{{feed.link}}</a>
+            </p>
+            
+            <p>Entries : {{feed.entries.length}}</p>
+            <p><a href="/feeds/{{ feed.id }}">View Feed</a></p>
+      </div>
+  </section>
+</div>

@@ -1,0 +1,18 @@
+    <div><a href="/feeds" class="nav-menu-button">Feeds</a> </div>
+    
+    <div class="nav-inner">
+        <div>
+            <ul class="">
+                <li ng-repeat="result in feeds | clearEmpty | filter:q track by result.id"
+                    class=""
+                    ng-class="{active:routeParams.feed_id==result.id}">
+                    <a href="/feeds/{{ result.id }}">
+                        {{ result.title }}
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <br><br>
+        <a href="/feeds/new">new Feeds</a>
+
+    </div>
